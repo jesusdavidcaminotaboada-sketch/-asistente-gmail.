@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Asistente AI para Gmail",
+  "version": "1.0",
+  "description": "Genera respuestas y seguimientos contextuales en Gmail usando IA.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://google.com*",
+    "https://openai.com*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://google.com*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
