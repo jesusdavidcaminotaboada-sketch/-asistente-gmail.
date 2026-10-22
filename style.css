@@ -1,0 +1,36 @@
+.gmail-ai-tools {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+  padding: 6px;
+  background-color: #f1f3f4;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.ai-response-btn {
+  background-color: #ffffff;
+  color: #3c4043;
+  border: 1px solid #dadce0;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ai-response-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #c3c4c6;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3);
+}
+
+.ai-response-btn:disabled {
+  background-color: #e8eaed;
+  color: #9aa0a6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
